@@ -1,10 +1,24 @@
 import { Component } from '@angular/core';
 
+import { Hero } from './hero';
+
 @Component({
   selector: 'p-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app works!';
+	title = 'Tour of Heroes';
+	hero: Hero = {
+		id: 1,
+		name: 'Gmork'
+	}
+	onClicked(value: string) {
+		alert(value);
+	}
+
+	receiveEvent(event) {
+		console.log('Copy event from app');
+		console.log(event);
+	}
 }
