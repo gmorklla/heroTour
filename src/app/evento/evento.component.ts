@@ -16,7 +16,7 @@ export class EventoComponent {
 		this.clicked.emit('It works!');
 	}
 
-    eventEmitCopy(event) {
-        this.eventEmitterCopy.emit(event);
-    }	
+  eventEmitCopy(event) {
+      this.eventEmitterCopy.emit(event);
+  }
 }

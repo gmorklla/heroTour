@@ -5,11 +5,15 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { EventoComponent } from './evento/evento.component';
+import { ListaComponent } from './lista/lista.component';
+import { ItemComponent } from './lista/item.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    EventoComponent
+    EventoComponent,
+    ListaComponent,
+    ItemComponent
   ],
   imports: [
     BrowserModule,
