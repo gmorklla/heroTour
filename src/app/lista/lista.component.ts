@@ -2,9 +2,9 @@ import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { Item } from './item';
 
 @Component({
-  selector: 'p-lista',
-  templateUrl: './lista.component.html',
-  styleUrls: []
+  selector    : 'p-lista',
+  templateUrl : './lista.component.html',
+  styleUrls   : []
 })
 export class ListaComponent implements OnInit {
 
@@ -24,5 +24,9 @@ export class ListaComponent implements OnInit {
 		console.log(item);
 		this.itemSeleccionadoEvent.emit(item);
 	}  
+
+	mouseOverEvent(event) {
+		console.log(event);
+	}
 
 }

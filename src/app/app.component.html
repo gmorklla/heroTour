@@ -8,16 +8,7 @@
         <span class="badge">{{hero.id}}</span> {{hero.name}}
     </li>
 </ul>
-<div *ngIf="selectedHero">
-	<h2>{{selectedHero.name}} details!</h2>
-	<div>
-	    <label>id: </label>{{selectedHero.id}}
-	</div>
-	<div>
-	    <label>name: </label>
-	    <input [(ngModel)]="selectedHero.name" placeholder="name">
-	</div>
-</div>
+<p-hero-detail [hero]="selectedHero"></p-hero-detail>
 <!-- Adicionales -->
 <hr>
 <p-evento (clicked)="onClicked($event)" (eventEmitterCopy)="receiveEvent($event)"></p-evento>
